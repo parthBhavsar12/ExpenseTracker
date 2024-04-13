@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;   
+    height: 100vh;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    
+}
+
+nav strong{
+    background-color: #0056b3;
+	color: white;
+    padding: 10px 100px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+    padding: 10px 80px;
+}
+
+nav a:hover{
+	background-color: white;
+	color: #0056b3;
+}
+
+.logout{
+	background-color: #ee5a5a;
+}
+
+.logout:hover{
+	background-color: red;
+	color: white;
+}

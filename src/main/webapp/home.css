@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+	width: 90%;
+	margin: 40px auto;
+}
+
+.budget{
+	background-color: #c7cbf5;
+	color: blue;
+	font-weight:bold;
+}
+
+.warning{
+	background-color: #f0c2c2;
+	color: red;
+	font-weight:bold;
+}
+
+#update{
+	text-decoration: none;
+    background-color: #0056b3;
+	color: white;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 0 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table tr th{
+	margin: auto;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+table tr:nth-child(even) > td{
+	border: 1px solid #007bff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+table tr:nth-child(odd) > td{
+	background-color: #c7cbf5;
+	border: 1px solid #007bff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+textarea{
+	resize: none;width: 93%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+	height: 150px;
+}
+
+button.next{
+	width: 47%;
+}
+
+button[type="reset"] {
+	background-color: #f93e3e;
+}
