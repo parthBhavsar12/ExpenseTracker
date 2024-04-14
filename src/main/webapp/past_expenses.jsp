@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.sql.*,java.io.*,java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +10,22 @@
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
+
+	<%!
+		String email, JDBC_DRIVER , DB_URL, USER, PASS, limit;
+		Statement st;
+		HttpSession session;
+		Connection con;
+	%>
+	<%
+		email = String.valueOf(session.getAttribute("user"));
+	%>
 	<nav>
-      	<strong>Expense Tracker System</strong>
-        <a href="new_entry.html"><i class="zmdi zmdi-info"></i>Add New Entry</a>
-        <a href="update.html"><i class="zmdi zmdi-present-to-all"></i>Update/Delete</a>
-        <a class="user-name" href="#">Hello, User</a>
-        <a class="logout" href="index.html"><i class="zmdi zmdi-square-right"></i>Log Out</a>
+      	<strong>Expense Tracker System</strong>      	
+        <a href="home.jsp"><i class="zmdi zmdi-present-to-all"></i>Home</a>
+        <a href="new_entry.jsp"><i class="zmdi zmdi-info"></i>Add New Entry</a>
+        <a class="user-name" href="#"><% out.print(email); %></a>
+        <a class="logout" href="index.jsp?action=logout"><i class="zmdi zmdi-square-right"></i>Log Out</a>
     </nav>
 	<div class="container">
 		<strong>Your expenses:</strong>
